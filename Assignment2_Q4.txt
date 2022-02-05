@@ -1,0 +1,48 @@
+Q4)  Write a java program to count the even and odd numbers in the given array.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+           package Assignment2;
+          import java.util.Scanner;
+          public class CountEvenOdd {
+
+	  public static void main(String[] args) {
+		int arraySize;
+		int i;
+		int evenCount=0;
+		int oddCount=0;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter No.Of Element Of An Array ");
+		arraySize = sc.nextInt();
+		int[]countArray = new int [arraySize];
+		System.out.println("Enter All the Element Of An Array ");
+		
+		for( i=0;i<arraySize;i++){
+			countArray[i]=sc.nextInt();
+		}
+		
+			for( i=0;i<arraySize;i++){
+			if(countArray[i] %2 == 0)
+					{
+				evenCount++;
+					}
+			else
+				oddCount++;
+			}
+			System.out.println("Even Number In The Array:"+evenCount);
+			System.out.println("Odd Number In The Array :"+oddCount);
+				
+		}
+		
+	}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ output-:   
+
+ Enter No.Of Element Of An Array 
+ 6
+ Enter All the Element Of An Array 
+ 1 2 3 4 5 6
+ Even Number In The Array:3
+ Odd Number In The Array :3
+
